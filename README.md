@@ -8,7 +8,7 @@ Add the class 'color' to 'column' widget.
 
 In the page settings add plugin 'Free code' and paste script to the HEAD field.
 ```html
-<script src="https://cdn.jsdelivr.net/gh/romaniter/plp-cart-color@latest/script.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/romaniter/plp-cart-color@latest/style.css"></script>
 ```
 
 In the page settings add plugin 'Free code' and paste script to the BODY field.
