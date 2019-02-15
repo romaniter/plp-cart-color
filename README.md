@@ -9,10 +9,12 @@ Add the class 'color' to 'column' widget.
 In the page settings add plugin 'Free code' and paste script to the BODY field.
 
 Go to the button settings and paste this code:
+```html
 <div class="name" hidden>
   Item name
 </div>
 <div class="cost" hidden>
   999 rub.
 </div>
+```
 This name and cost will be added to cart after click on button.
