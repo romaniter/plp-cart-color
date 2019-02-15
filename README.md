@@ -6,6 +6,11 @@ How to add:
 Add buttons to your item block manually. It can be in 'column' widget , for example.
 Add the class 'color' to 'column' widget.
 
+In the page settings add plugin 'Free code' and paste script to the HEAD field.
+```html
+<script src="https://cdn.jsdelivr.net/gh/romaniter/plp-cart-color@latest/script.js"></script>
+```
+
 In the page settings add plugin 'Free code' and paste script to the BODY field.
 ```html
 <script src="https://cdn.jsdelivr.net/gh/romaniter/plp-cart-color@latest/script.js"></script>
