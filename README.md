@@ -7,6 +7,9 @@ Add buttons to your item block manually. It can be in 'column' widget , for exam
 Add the class 'color' to 'column' widget.
 
 In the page settings add plugin 'Free code' and paste script to the BODY field.
+```html
+<script src="https://cdn.jsdelivr.net/gh/romaniter/plp-cart-color@latest/script.js"></script>
+```
 
 Go to the button settings and paste this code:
 ```html
