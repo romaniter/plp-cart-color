@@ -1,4 +1,4 @@
-// v1.0
+console.log('plp-cart-color v1.0');
 $('#color button').click(function() {
  var target = event.target;
   while (target.tagName != 'BODY') {
