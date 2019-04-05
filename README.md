@@ -11,7 +11,7 @@ In the page settings add plugin 'Free code' and paste script to the HEAD field.
 <script src="https://cdn.jsdelivr.net/gh/romaniter/plp-cart-color@latest/style.css"></script>
 ```
 
-In the page settings add plugin 'Free code' and paste script to the BODY field.
+In the page settings add plugin 'Random code' and paste script to the BODY field.
 ```html
 <script src="https://cdn.jsdelivr.net/gh/romaniter/plp-cart-color@latest/script.js"></script>
 ```
