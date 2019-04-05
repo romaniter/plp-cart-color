@@ -1,4 +1,4 @@
-$('#color button').click(function() {
+$('.color button').click(function() {
  var target = event.target;
   while (target.tagName != 'BODY') {
     if ($(target).hasClass('widget-element')) {
