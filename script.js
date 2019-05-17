@@ -1,7 +1,7 @@
 $('.color button').click(function() {
  var target = event.target;
   while (target.tagName != 'BODY') {
-    if ($(target).hasClass('widget-element')) {
+    if ($(target).attr('data-item')) {
         $(target).data('item')[0]['value'] = $(event.target).find(".name").text();
         if (Boolean($(event.target).find('.cost').text())) {
           cost = $(event.target).find(".cost").text();
