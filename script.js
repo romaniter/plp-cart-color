@@ -19,11 +19,12 @@ $('.color button').click(function() {
             //Если есть фото - меняем фото в карточке
 	    if (Boolean(pht)) {
               $(target).data('item')[2]['value'] = pht;
-              $(target).find('[data-role="image"] img').attr("src",pht);
-            }
-	    //Поиск кнопки и удаление обводки
-            $(target).find('.hoverbtn').removeClass('hoverbtn');
-            //Функция добавления картинки к товару в корзине
+              if ($(target).find('[data-role="image"]').hasClass("bgnormal")) {
+		  $(target).find('[data-role="image"] img').attr("src",pht)
+	      } else {
+		  $(target).find('[data-role="image"]').css('background-image', 'url(' + pht + ')');
+	      }
+	    //Функция добавления картинки к товару в корзине
 	    function add() {
               var grid = $('[data-modal=cart] div:contains("' + text + '")').parents('.grid');
               var getAtributeImage = $(grid).find('[data-role=itemphoto]').attr('style');
@@ -33,6 +34,9 @@ $('.color button').click(function() {
             $(target).find('[data-action=addtocart]').click(function() {
                setTimeout(add, 500);
             });
+            }
+	    //Поиск кнопки и удаление обводки
+            $(target).find('.hoverbtn').removeClass('hoverbtn');
         break;
     }
     //Нечего делать - идем выше
