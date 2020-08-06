@@ -14,7 +14,7 @@ $('.color button').click(function() {
             //Если есть цена - меняем цену в карточке
 	    if (Boolean(cost)) {
               $(target).data('item')[1]['value'] = cost;
-              $(target).find('[data-role="itemprice"] span').text(cost);
+              $(target).find('[data-role="itemprice"]>div').children().first().text(cost);
             }
             //Если есть фото - меняем фото в карточке
 	    if (Boolean(pht)) {
