@@ -10,6 +10,8 @@ $('.color button').click(function() {
     }
     //Если таргет - карточка товара, изменяем данные
     if ($(target).attr('data-item')) {
+	 //Активируем кнопку добавления в корзину
+	 $(target).find('[data-action=addtocart]').prop('disabled', false);
         $(target).data('item')[0]['value'] = text;
             //Если есть цена - меняем цену в карточке
 	    if (Boolean(cost)) {
@@ -57,3 +59,4 @@ $('.color button').click(function() {
     target = target.parentNode;
   }
 });
+$('.color').closest('[data-item]').find('[data-action=addtocart]').prop('disabled', true);
