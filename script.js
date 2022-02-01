@@ -41,7 +41,7 @@ $('.color button').click(function() {
             });
             }
 	    //Поиск кнопки и удаление обводки
-            $(target).find('.hoverbtn').removeClass('hoverbtn');
+            $(target).find('.active').removeClass('active');
         break;
     }
     //Нечего делать - идем выше
@@ -53,7 +53,7 @@ $('.color button').click(function() {
   //Найти кнопку и добавить обводку
   while (target.tagName != 'BODY') {
      if ($(target).hasClass('btn')) {
-        $(target).addClass('hoverbtn');
+        $(target).addClass('active');
         return;
     }
     target = target.parentNode;
