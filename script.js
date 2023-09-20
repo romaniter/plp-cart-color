@@ -16,7 +16,7 @@ $('.color button').click(function() {
             //Если есть цена - меняем цену в карточке
 	    if (Boolean(cost)) {
               $(target).data('item')[1]['value'] = cost;
-	      let allElements = $(target).find('[data-role=itemprice]:eq(0)').find('*');
+	      let allElements = $(target).find('[data-role=itemprice]:eq(0)').parent().find('*');
               let index = allElements.length;
 	      let elem = allElements.eq(index-1);
               elem.text(cost);
