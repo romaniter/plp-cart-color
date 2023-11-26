@@ -6,7 +6,7 @@ $('.color button').click(function() {
     if ($(target).hasClass('btn')) {
         text = $(target).find(".name").text();
         cost = $(target).find(".cost").text();
-        pht = $(target).find(".pht").text();
+        pht = $(target).find(".pht").text().replaceAll('\n','');
     }
     //Если таргет - карточка товара, изменяем данные
     if ($(target).attr('data-item')) {
