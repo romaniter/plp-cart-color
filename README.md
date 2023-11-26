@@ -1,5 +1,5 @@
 # plp-cart-color
-Add the color select buttons to item block (for add any color to cart) - usable on PlatformaLP only
+Add the color select buttons to item block (for add any color to cart) - usable on PlatformaLP only (3.3 / 3.7)
 
 How to add:
 
