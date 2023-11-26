@@ -4,7 +4,7 @@ $('.color button').click(function() {
   while (target.tagName != 'BODY') {
     //Поиск кнопки и парсинг данных из нее
     if ($(target).hasClass('btn')) {
-        text = $(target).find(".name").text();
+        text = $(target).find(".name").text().replaceAll('\n','');
         cost = $(target).find(".cost").text();
         pht = $(target).find(".pht").text().replaceAll('\n','');
     }
