@@ -1,22 +1,22 @@
 # plp-cart-color
-Add the color select buttons to item block (for add any color to cart) - usable on PlatformaLP only (3.3 / 3.7)
+Выбор параметра в карточке товара для Платформы LP (3.3 / 3.7)
 
-How to add:
+Установка:
 
-Add buttons to your item block manually. It can be in 'column' widget , for example.
-Add the class 'color' to 'column' widget.
+Вставьте нужное количество кнопок в карточку товара, объединив в одном виджете (блок, колонки и тд)
+Добавьте класс color к виджету в котором находятся кнопки для выбора параметров
 
-In the page settings add plugin 'Free code' and paste script to the HEAD field.
+Перейдите в настройки страницы -> добавьте плагин "Проивзольный код" -> в поле HEAD добавьте код:
 ```html
 <script src="https://cdn.jsdelivr.net/gh/romaniter/plp-cart-color@latest/style.css"></script>
 ```
 
-In the page settings add plugin 'Random code' and paste script to the BODY field.
+В поле BODY / BODYEND вставьте код:
 ```html
 <script src="https://cdn.jsdelivr.net/gh/romaniter/plp-cart-color@latest/script.js"></script>
 ```
 
-Go to the button settings and paste this code:
+В настройках каждой кнопки вставьте код:
 ```html
 <div class="name" hidden>
   Item name
@@ -25,4 +25,3 @@ Go to the button settings and paste this code:
   999 rub.
 </div>
 ```
-This name and cost will be added to cart after click on button.
